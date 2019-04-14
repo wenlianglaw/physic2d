@@ -1,7 +1,7 @@
 INC=-I/opt/X11/include -I./ -I./p2d_sdl -I./P2D
 LIBS=-L/usr/X11/lib -lX11 -lSDL2main -lSDL2
 CC=g++
-TARGET=1
+TARGET=physic_2d
 CFLAGS= -std=c++17 -Wall 
 
 OBJECTS=$(patsubst %.cpp, %.o, $(shell find . -name "*.cpp" -print))
